@@ -25,7 +25,7 @@ from utils.clamp import clamp_abs
 def forward_kinematics(
     q_hip: float,
     q_knee: float,
-    limb_length: float = 0.17,
+    limb_length: float = 0.225,
 ) -> float:
     """
     Compute forward kinematics for a single leg.
@@ -52,7 +52,7 @@ def forward_kinematics(
 
 def inverse_kinematics(
     crouch_height: float,
-    limb_length: float = 0.17,
+    limb_length: float = 0.225,
 ) -> Tuple[float, float]:
     """
     Solve inverse kinematics for a single leg.

@@ -4,8 +4,8 @@ bullet:
     gui: true
     position_init_base_in_world: [0.0, 0.0, 0.6]
     torque_control:
-        kp: 20.0
-        kd: 1.0
+        kp: 50.0
+        kd: 5.0
 floor_contact:
     upper_leg_torque_threshold: 10.0
 wheel_contact:
@@ -16,5 +16,5 @@ wheel_contact:
     touchdown_inertia: 0.004
 wheel_odometry:
     signed_radius:
-        left_wheel: +0.06
-        right_wheel: -0.06
+        left_wheel: +0.1
+        right_wheel: -0.1
