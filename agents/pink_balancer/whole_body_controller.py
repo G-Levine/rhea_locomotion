@@ -127,7 +127,7 @@ class WholeBodyController:
                 them apart.
         """
         robot = load_robot_description(
-            "upkie_description", root_joint=pin.JointModelFreeFlyer()
+            "rhea_description", root_joint=pin.JointModelFreeFlyer()
         )
         configuration = pink.apply_configuration(robot, robot.q0)
         servo_layout = {

@@ -30,11 +30,14 @@ namespace upkie_locomotion::spines::upkie_layout {
 inline const vulp::actuation::ServoLayout servo_layout() noexcept {
   vulp::actuation::ServoLayout layout;
   layout.add_servo(1, 1, "right_hip");
-  layout.add_servo(2, 1, "right_knee");
-  layout.add_servo(3, 1, "right_wheel");
-  layout.add_servo(4, 2, "left_hip");
-  layout.add_servo(5, 2, "left_knee");
-  layout.add_servo(6, 2, "left_wheel");
+  layout.add_servo(2, 1, "right_wheel");
+  layout.add_servo(3, 2, "left_hip");
+  layout.add_servo(4, 2, "left_wheel");
+
+  // Remove these later
+  layout.add_servo(10, 1, "right_knee");
+  layout.add_servo(11, 2, "left_knee");
+
   return layout;
 }
 
@@ -43,6 +46,7 @@ inline const vulp::actuation::ServoLayout servo_layout() noexcept {
  * \return Vector of upper leg joint names.
  */
 inline const std::vector<std::string> upper_leg_joints() noexcept {
+  // return {"left_hip", "right_hip"};
   return {"left_hip", "left_knee", "right_hip", "right_knee"};
 }
 

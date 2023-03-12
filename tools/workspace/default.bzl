@@ -3,7 +3,7 @@
 # Copyright 2022 Stéphane Caron
 
 load("//tools/workspace/pycodestyle:repository.bzl", "pycodestyle_repository")
-load("//tools/workspace/upkie_description:repository.bzl", "upkie_description_repository")
+load("//tools/workspace/rhea_description:repository.bzl", "rhea_description_repository")
 load("//tools/workspace/vulp:repository.bzl", "vulp_repository")
 
 def add_default_repositories():
@@ -16,5 +16,5 @@ def add_default_repositories():
     function from its WORKSPACE.
     """
     pycodestyle_repository()
-    upkie_description_repository()
+    rhea_description_repository()
     vulp_repository()

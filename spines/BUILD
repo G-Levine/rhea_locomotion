@@ -23,7 +23,7 @@ cc_binary(
         "bullet.cpp",
     ],
     data = [
-        "@upkie_description",
+        "@rhea_description",
     ],
     deps = [
         "//observers",

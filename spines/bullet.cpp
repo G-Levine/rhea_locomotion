@@ -165,7 +165,7 @@ int main(const char* argv0, const CommandLineArguments& args) {
   bullet_params.dt = 1.0 / args.spine_frequency;
   bullet_params.gui = args.show;
   bullet_params.position_init_base_in_world = Eigen::Vector3d(0., 0., 0.6);
-  bullet_params.urdf_path = "external/upkie_description/urdf/upkie.urdf";
+  bullet_params.urdf_path = "external/rhea_description/urdf/rhea.urdf";
   BulletInterface interface(servo_layout, bullet_params);
 
   // Spine
